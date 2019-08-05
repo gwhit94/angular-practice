@@ -1,0 +1,9 @@
+<h3>Names List</h3>
+<input type="text" [(ngModel)]='newName'>
+<button (click)='addName()'>Add Name</button>
+<ng-container *ngFor='let name of names; let i = index'>
+    <div *ngIf="name != 'Mike'">
+        {{name}}
+        <button (click)='removeName(i)'>Remove Name</button>
+    </div>
+</ng-container>

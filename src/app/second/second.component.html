@@ -1,0 +1,5 @@
+<h3>Input Toggler</h3>
+<input type="text" [(ngModel)]="inputText">
+<button (click)="showDiv = !showDiv">{{showDiv ? 'Hide' : 'Show'}} Input</button>
+<div *ngIf='showDiv'>{{inputText}}</div>
+
