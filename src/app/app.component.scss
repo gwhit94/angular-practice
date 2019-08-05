@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+}
+.menu-item {
+    text-align: center;
+    flex-basis: 25%;
+    background-color: orange;
+}
+.active {
+    color: orange;
+    background-color: blue;
+}

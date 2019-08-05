@@ -5,11 +5,20 @@
   </h1>
 </div>
 
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet>
 <h1>Classwork</h1>
 <app-first></app-first>
 <app-second></app-second>
 <hr>
 <h1>Homework</h1>
 <app-names-list></app-names-list>
-<app-random-number></app-random-number>
+<app-random-number></app-random-number> -->
+
+<div class="menu">
+  <a routerLinkActive="active" [routerLink]="['/first']" class="menu-item">First</a>
+  <a routerLinkActive="active" [routerLink]="['/second']" class="menu-item">Second</a>
+  <a routerLinkActive="active" [routerLink]="['/random']" class="menu-item">Random</a>
+  <a routerLinkActive="active" [routerLink]="['/names']" class="menu-item">Names</a>
+</div>
+
+<router-outlet></router-outlet>
